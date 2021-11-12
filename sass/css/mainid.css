@@ -1373,14 +1373,10 @@ p a img {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.contentplay .list ul.chucnang-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding-left: 0;
-  margin-bottom: 0;
+.contentplay .list .chucnang-list {
+  /*list-style: none;display: grid;grid-template-columns:repeat(5, 1fr);padding-left: 0;margin-bottom: 0;*/
 }
-.contentplay .list ul.chucnang-list li a {
+.contentplay .list .chucnang-list div a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1389,10 +1385,10 @@ p a img {
   font-weight: 500;
   text-align: center;
 }
-.contentplay .list ul.chucnang-list li a:hover {
+.contentplay .list .chucnang-list div a:hover {
   filter: brightness(110%);
 }
-.contentplay .list ul.chucnang-list li a img {
+.contentplay .list .chucnang-list div a img {
   width: 60%;
   margin-bottom: 0.2rem;
 }
@@ -1504,13 +1500,14 @@ p a img {
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+.maincontent .tab-content .itemgames a.xem span.hide {
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 .maincontent .tab-content .itemgames a.xem span.show {
   display: flex;
   transition: all 0.3s ease-in-out;
-}
-.maincontent .tab-content .itemgames a.xem span.hide {
-  display: none;
-  transition: all 0.3s ease-in-out;
+  visibility: visible;
 }
 .maincontent .tab-content .accordion-button {
   display: block;
@@ -1962,12 +1959,12 @@ footer .mainfooter p {
     margin-right: 5px;
   }
 
-  .chucnang ul.chucnang-list li {
+  .chucnang ul.chucnang-list div {
     margin-bottom: 15px;
     font-size: 13px;
   }
 
-  .chucnang ul.chucnang-list li a img {
+  .chucnang ul.chucnang-list div a img {
     width: 50%;
   }
 
@@ -1987,16 +1984,6 @@ footer .mainfooter p {
     flex-direction: column;
   }
   .usertoken .userinfotoken {
-    margin-bottom: 1rem;
-  }
-
-  .contentplay .list {
-    padding-bottom: 0;
-  }
-  .contentplay .list ul.chucnang-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .contentplay .list ul.chucnang-list li {
     margin-bottom: 1rem;
   }
 

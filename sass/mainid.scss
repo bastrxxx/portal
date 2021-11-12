@@ -420,8 +420,8 @@ p{a{img{max-width: 100%;display: block;margin: 0 auto;}}}
 }
 .contentplay{background-color: #eaeaea;
 	.list{background: var(--whitecolor);padding: 20px 0;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;
-		ul.chucnang-list{list-style: none;display: grid;grid-template-columns:repeat(5, 1fr);padding-left: 0;margin-bottom: 0;
-			li{
+		.chucnang-list{/*list-style: none;display: grid;grid-template-columns:repeat(5, 1fr);padding-left: 0;margin-bottom: 0;*/
+			div{
 				a{display: flex;align-items: center;justify-content: center;flex-direction: column;color: var(--color2);font-weight: 500;text-align: center;
 					&:hover{filter: brightness(110%);}
 					img{width:60%;margin-bottom: 0.2rem;}
@@ -458,8 +458,8 @@ p{a{img{max-width: 100%;display: block;margin: 0 auto;}}}
 			a.xem{position: relative;border:1px solid var(--color1);-webkit-transition: all .3s linear 0s;transition: all .3s linear 0s;
 				span.ok{color: var(--color1);}
 				span.thunho{position: absolute;background: var(--whitecolor);width: 100%;height: 100%;top: 0;left: 0;display: flex;align-items: center;justify-content: center;border-radius:4px;color:var(--color3);border:1px solid var(--color3);box-shadow:0px 0px 0px 1px var(--color3);-webkit-transition: all .3s linear 0s;transition: all .3s linear 0s;}
-				span.show{display: flex;transition:all 0.3s ease-in-out;}
-				span.hide{display: none;transition:all 0.3s ease-in-out;}
+				span.hide{visibility: hidden;transition:all 0.3s ease-in-out;}
+				span.show{display: flex;transition:all 0.3s ease-in-out;visibility: visible;}
 			}
 			
 		}
@@ -678,8 +678,8 @@ footer{width: 100%;position: fixed;bottom:0;left: 0;
 	}
 	.user-content .user-money .ixu{padding-left: 5px;}
 	.user-content .user-money .ixu img{margin-right: 5px;}
-	.chucnang ul.chucnang-list li{margin-bottom: 15px;font-size: 13px;}
-	.chucnang ul.chucnang-list li a img{width: 50%;}
+	.chucnang ul.chucnang-list div{margin-bottom: 15px;font-size: 13px;}
+	.chucnang ul.chucnang-list div a img{width: 50%;}
 	.chucnang ul.chucnang-list{grid-template-columns: repeat(3, 1fr);}
 	.userinfogame .container{align-items: flex-start;flex-direction: column;
 		.infogame{margin-bottom: calc(var(--spacing) / 3);}
@@ -687,11 +687,7 @@ footer{width: 100%;position: fixed;bottom:0;left: 0;
 	.usertoken{flex-direction: column;
 		.userinfotoken{margin-bottom: 1rem;}
 	}
-	.contentplay .list{padding-bottom: 0;
-		ul.chucnang-list{grid-template-columns: repeat(3, 1fr);
-			li{margin-bottom: 1rem;}
-		}
-	}
+	
 	.maincontent .nav-out{flex-direction: column;align-items: inherit;
 		.nav{margin-bottom: 0.5rem;}
 	}

@@ -339,6 +339,7 @@ header {
   justify-content: space-between;
   padding: 1.5rem 0;
   transition: all 0.3s ease-in-out;
+  align-items: center;
 }
 .category ul li:hover {
   color: var(--color1);
@@ -961,6 +962,7 @@ p a img {
   border: 1px solid #cccccc;
   padding: 1rem;
   position: relative;
+  cursor: pointer;
 }
 .nhiemvu .nhiemvu-block h6 {
   font-weight: 700;
@@ -1076,7 +1078,8 @@ p a img {
   color: var(--color2);
 }
 .nhiemvu .showlichsu .mission .rightct .normal {
-  color: var(---whicecolor);
+  color: var(--color3);
+  font-size: 13px;
   word-break: break-all;
   display: -webkit-box;
   -webkit-line-clamp: 2;

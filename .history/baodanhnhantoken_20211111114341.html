@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nhiệm vụ chơi game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link href="sass/slick.css" rel="stylesheet" type="text/css">
+	<link href="sass/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="sass/style.css" rel="stylesheet" type="text/css">
+    <link href="sass/css/mainid.css" rel="stylesheet" type="text/css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body class="bodymain">
+	<div class="wrapper" id="dkLogin">
+		<header class="">
+			<div class="container">
+				<div class="mainheader">
+					<img class="toplogo" src="images/logo.png" alt=""/>
+					<div class="rightheader">
+						<div class="topinfo">
+							<div class="userinfomain">
+								<img src="images/ava.jpg" alt="" class="avauser" />
+								<div class="userinfo">
+									<span class="username">Alisaaliba</span>
+									<span class="gold">500.000 iXu</span>
+								</div>
+							</div>
+							<a href="#" class="btnlist" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Thông tin nhân vật</a></li>
+								<li><a class="dropdown-item" href="#">Lịch sử giao dịch</a></li>
+								<li><a class="dropdown-item" href="#">Hướng dẫn nạp</a></li>
+								<li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+							  </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="content">
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="staticBackdropLabel">Báo danh thành công</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <p>Chúc mừng bạn báo danh thành công
+						Nhận +1 iTap Token</p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn xacnhan">Đồng ý</button>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="staticBackdropLabel">Giới thiệu chức năng báo danh</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					  <p>Với 50 trường hợp F0 đủ điều kiện điều trị tại nhà, toàn tỉnh Phú Thọ đã kích hoạt 5 trạm y tế lưu động tại xã/phường Kim Đức, Chu Hóa, Thanh Đình, Vân Cơ, Thọ Sơn - TP Việt Trì để đảm bảo người bệnh điều trị tại nhà được tiếp cận dịch vụ y tế ngay tại xã, phường; chăm sóc, theo dõi các ca F0 tại nhà, giúp họ tiếp cận với các "túi thuốc an sinh" điều trị F0 tại nhà và được hỗ trợ y tế kịp thời khi có yêu cầu.
+</p><p>
+						Theo thông tin từ UBND tỉnh Phú Thọ, mô hình trạm y tế lưu động tại TP Việt Trì bước đầu đã giảm tải được áp lực cho tuyến trên trong việc điều trị và chăm sóc các trường hợp F0 tại nhà cũng như hỗ trợ việc lấy mẫu xét nghiệm định kỳ các trường hợp F0, F1, trường hợp nghi nhiễm. Mô hình này được coi là "cánh tay nối dài" của ngành y tế để kịp thời chăm sóc sức khỏe cho người dân tại nhà.
+					</p><p>
+						Bức xúc vì chưa thực hiện đúng việc kết thúc cách ly F2
+					</p><p>
+						Ông Hồ Đại Dũng - Phó chủ tịch UBND tỉnh Phú Thọ - vừa ký văn bản gửi Sở Y tế và UBND các huyện, thành, thị yêu cầu thực hiện kết thúc cách ly y tế đối với các trường hợp F2 khi đủ điều kiện.
+					</p><p>
+						Theo đó đã có một số doanh nghiệp, người dân trên địa bàn phản ánh việc chưa thực hiện đúng, kịp thời việc kết thúc cách ly y tế đối với các trường hợp F2 đủ điều kiện.
+					</p><p>
+						"Tình trạng trên gây khó khăn cho các doanh nghiệp do thiếu hụt lao động, ảnh hưởng đến hoạt động sản xuất, cung ứng hàng hóa, khôi phục kinh tế; gây bức xúc cho người lao động ảnh hưởng đến việc làm, thu nhập" - lãnh đạo tỉnh Phú Thọ chỉ rõ.a</p>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<p class="mb-3"><a href="#" class="banner"><img src="images/choigametoken.jpg" alt="" /></a></p>
+			<div class="nhiemvu nvcg mt-3 mb-3">
+				<div class="container">
+					<div class="row">
+						<div class="baodanhnhantoken p-0">
+                            <div class="col-12 mb-3">
+                                <div class="calendar calendar-first" id="calendar_first">
+                                <div class="calendar_header">
+                                     <h2></h2>
+                                </div>
+                                <div class="calendar_weekdays"></div>
+                                <div class="calendar_content"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+								<button class="btn xacnhan btn-primary" type="submit">Trở thành hội viên cao cấp</button>
+							</div>
+                            <div class="col-12 mb-3 text-center">
+								<a href="#" class="gioithieubaodanh" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Giới thiệu hoạt động báo danh mỗi ngày >></a>
+							</div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="mainfooter">
+				<img src="images/logo.png" alt="" class="logo-footer"/>
+				<p>Công ty Cổ phần Truyền hình Tương tác Việt Nam<br>
+	VTVLive Office, tầng 7, VTVCab Tower<br>
+	Số 3, ngõ 84 Ngọc Khánh, Ba Đình, Hà Nội, Việt Nam<br>
+	Email: info@itap.vn</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $('.fullslider').slick({
+		dots: true,
+		autoplay: true,
+		infinite: false,
+		arrows: false,
+	  });
+	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		   updateScale();
+		 });
+		function updateScale() {
+			const resizeObserver = new ResizeObserver(function(entries) {
+				var height = entries[0].target.clientHeight + 50;
+				var boxx = $('.footer');
+				var height2 = boxx.outerHeight();
+				var wd = $( window ).height();
+
+				console.log('Screen change', [height, height2, wd]);
+
+				if ((height + height2) > wd){
+					$(".footer").addClass("nofixed");
+				} else{
+					$(".footer").removeClass("nofixed");
+				}
+			})
+			// start observing a DOM node
+			resizeObserver.observe(document.querySelector('#dkLogin'))
+		}
+		$(window).resize(updateScale);
+	</script>
+</body>
+</html>

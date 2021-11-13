@@ -2587,6 +2587,11 @@ p a img {
   color: var(--color3);
 }
 
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
 .content {
   background-color: var(--whitecolor);
 }

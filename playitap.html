@@ -15,6 +15,8 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+	<link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body class="bodymain">
 	<div class="wrapper" id="dkLogin">
@@ -132,12 +134,20 @@
 										  <p class="h6">Giới thiệu</p>
 										  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 										  <p class="h6">Hình ảnh game</p>
-										  <div class="slidergames">
-											<div><img src="images/slidergames3.jpg" alt=""/></div>
-											<div><img src="images/slidergames3.jpg" alt=""/></div>
-											<div><img src="images/slidergames3.jpg" alt=""/></div>
-											<div><img src="images/slidergames3.jpg" alt=""/></div>
-										  </div>
+										  <div class="swiper slidergames3">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper">
+											<!-- Slides -->
+												<div class="swiper-slide"><img src="images/slidergames3.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames3.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames3.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames3.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames3.jpg" alt=""/></div>
+											</div>
+											<!-- If we need navigation buttons -->
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
 										  <p class="text-center fs-4 mb-0"><i class="fa fa-caret-up main" aria-hidden="true"></i></p>
 									  </div>
 									</div>
@@ -172,13 +182,20 @@
 										  <p class="h6">Giới thiệu</p>
 										  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 										  <p class="h6">Hình ảnh game</p>
-										  <div class="slidergames2">
-											<div><img src="images/slidergames2.jpg" alt=""/></div>
-											<div><img src="images/slidergames2.jpg" alt=""/></div>
-											<div><img src="images/slidergames2.jpg" alt=""/></div>
-											<div><img src="images/slidergames2.jpg" alt=""/></div>
-											<div><img src="images/slidergames2.jpg" alt=""/></div>
-										  </div>
+										  <div class="swiper slidergames3">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper">
+											<!-- Slides -->
+												<div class="swiper-slide"><img src="images/slidergames2.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames2.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames2.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames2.jpg" alt=""/></div>
+												<div class="swiper-slide"><img src="images/slidergames2.jpg" alt=""/></div>
+											</div>
+											<!-- If we need navigation buttons -->
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
 										  <p class="text-center fs-4 mb-0"><i class="fa fa-caret-up main" aria-hidden="true"></i></p>
 									  </div>
 									</div>
@@ -213,12 +230,21 @@
 										  <p class="h6">Giới thiệu</p>
 										  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 										  <p class="h6">Hình ảnh game</p>
-										  <div class="slidergames3">
-											<div><img src="images/slidergames.jpg" alt=""/></div>
-											<div><img src="images/slidergames.jpg" alt=""/></div>
-											<div><img src="images/slidergames.jpg" alt=""/></div>
-											<div><img src="images/slidergames.jpg" alt=""/></div>
-										  </div>
+										  <!-- Slider main container -->
+											<div class="swiper slidergames3">
+												<!-- Additional required wrapper -->
+												<div class="swiper-wrapper">
+												<!-- Slides -->
+													<div class="swiper-slide"><img src="images/slidergames.jpg" alt=""/></div>
+													<div class="swiper-slide"><img src="images/slidergames.jpg" alt=""/></div>
+													<div class="swiper-slide"><img src="images/slidergames.jpg" alt=""/></div>
+													<div class="swiper-slide"><img src="images/slidergames.jpg" alt=""/></div>
+													<div class="swiper-slide"><img src="images/slidergames.jpg" alt=""/></div>
+												</div>
+												<!-- If we need navigation buttons -->
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-button-next"></div>
+											</div>
 										  <p class="text-center fs-4 mb-0"><i class="fa fa-caret-up main" aria-hidden="true"></i></p>
 									  </div>
 									</div>
@@ -382,24 +408,47 @@
 		infinite: false,
 		arrows: false,
 	  });
-		$('.slidergames, .slidergames2, .slidergames3').slick({
-		dots: false,
-		autoplay: false,
-		infinite: false,
-		arrows: true,
-		slidesToShow: 3,
-		responsive: [
-				{
-				  breakpoint: 540,
-				  settings: {
-					slidesToShow:1,
-					centerMode: false
-				  }
-				}
-			]
-	  });
+	// 	$('.slidergames, .slidergames2, .slidergames3').slick({
+	// 	dots: false,
+	// 	autoplay: false,
+	// 	infinite: false,
+	// 	arrows: true,
+	// 	slidesToShow: 3,
+	// 	responsive: [
+	// 			{
+	// 			  breakpoint: 540,
+	// 			  settings: {
+	// 				slidesToShow:1,
+	// 				centerMode: false
+	// 			  }
+	// 			}
+	// 		]
+	//   });
 	});
-		
+	</script>
+	<script>
+		var swiper = new Swiper(".slidergames3", {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+			},
+		  breakpoints: {
+			"@0.00": {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			"@0.75": {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			"@1.00": {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+		  },
+		});
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {

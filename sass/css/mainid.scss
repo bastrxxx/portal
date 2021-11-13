@@ -1979,6 +1979,12 @@ p {
     }
   }
 }
+.swiper-slide {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .content {
   background-color: var(--whitecolor);
   .maincontent {

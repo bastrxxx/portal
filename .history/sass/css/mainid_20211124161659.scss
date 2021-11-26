@@ -4,7 +4,7 @@ $fontfam: "Montserrat", Roboto, sans-serif;
 @import 'giftcode';
 @import 'hotro';
 :root {
-  --color1: #e13f45;
+  --color1: #ef542e;
   --color2: #333333;
   --color3: #808080;
   --colorok: #31da70;
@@ -2040,11 +2040,9 @@ footer {
     bottom: 0;
     img {
       width: 100px;
-      height: 30px;
+      height: 47px;
       object-fit: cover;
       margin-bottom: 25px;
-      filter: grayscale(100%);
-      filter:brightness(10000%);
     }
     p {
       line-height: 1.6;

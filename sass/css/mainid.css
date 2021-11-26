@@ -460,12 +460,6 @@
 
 .hotro .cauhoi .accordion-item .accordion-button {
   font-weight: 600;
-  background-color: var(--color3);
-  color: var(--whitecolor);
-}
-
-.hotro .cauhoi .accordion-item .accordion-button::after {
-  background-image: none;
 }
 
 .hotro .cauhoi .accordion-item .list-group a {
@@ -504,7 +498,7 @@
 }
 
 :root {
-  --color1: #f4ae3f;
+  --color1: #e13f45;
   --color2: #333333;
   --color3: #808080;
   --colorok: #31da70;
@@ -612,8 +606,8 @@ header {
 }
 
 .mainheader img.toplogo {
-  width: 70px;
-  height: 32px;
+  width: 100px;
+  height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -3168,10 +3162,14 @@ footer .mainfooter {
 
 footer .mainfooter img {
   width: 100px;
-  height: 47px;
+  height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 25px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-filter: brightness(10000%);
+          filter: brightness(10000%);
 }
 
 footer .mainfooter p {

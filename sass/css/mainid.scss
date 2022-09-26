@@ -2085,6 +2085,11 @@ footer {
   .content {
     border: 0;
   }
+  .maincontent .tab-content .itemgames {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .maincontent .tab-content .itemgames a.xem{width: 100%;text-align: center;}
 }
 @media (max-width: 540px) {
   .maincontent .tab-content .accordion-collapse ul.btn-list {
@@ -2154,7 +2159,5 @@ footer {
       margin-bottom: 0.5rem;
     }
   }
-  .maincontent .tab-content .itemgames {
-    flex-direction: column;
-  }
+  
 }

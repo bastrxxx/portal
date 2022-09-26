@@ -3219,6 +3219,19 @@ footer .mainfooter p {
   .content {
     border: 0;
   }
+  .maincontent .tab-content .itemgames {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .maincontent .tab-content .itemgames a.xem {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 540px) {
@@ -3306,12 +3319,6 @@ footer .mainfooter p {
   }
   .maincontent .nav-out .nav {
     margin-bottom: 0.5rem;
-  }
-  .maincontent .tab-content .itemgames {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=mainid.css.map */

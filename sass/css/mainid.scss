@@ -1682,7 +1682,6 @@ p {
       justify-content: space-between;
       cursor: pointer;
       img {
-        max-width: 100px;
         object-fit: contain;
       }
       h6 {
@@ -1706,7 +1705,6 @@ p {
         color: #4caf50;
       }
       a.xem {
-        min-width: 115px;
         position: relative;
         border: 1px solid var(--color1);
         -webkit-transition: all 0.3s linear 0s;
@@ -2057,12 +2055,6 @@ footer {
 .nofixed {
   position: relative !important;
 }
-.offcanvas{height: auto;max-height: 80vh;
-  .offcanvas-header{background-color: var(--colortablehead);text-align: center;display: initial;
-      .container1{max-width: 768px;margin: 0 auto;display: flex;justify-content: space-between;align-content: center;align-items: center;}
-      h5{font-size:16px;font-weight: 700;}
-  }
-}
 .btn.xacnhan {
   background-color: var(--color1);
   color: var(--whitecolor);
@@ -2093,6 +2085,11 @@ footer {
   .content {
     border: 0;
   }
+  .maincontent .tab-content .itemgames {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .maincontent .tab-content .itemgames a.xem{width: 100%;text-align: center;}
 }
 @media (max-width: 540px) {
   .maincontent .tab-content .accordion-collapse ul.btn-list {
@@ -2162,12 +2159,5 @@ footer {
       margin-bottom: 0.5rem;
     }
   }
-  .maincontent .tab-content .itemgames {
-    flex-direction: column;
-    align-items: flex-start;
-    a.xem{margin: 0 auto;}
-  }
-}
-@media (max-width: 320px) {
-  .itapken .container a.lichsu-btn{padding: 0.5rem 1rem;}
+  
 }

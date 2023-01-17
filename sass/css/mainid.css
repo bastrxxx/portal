@@ -3150,13 +3150,22 @@ footer {
 }
 
 footer .bg-footer {
-  background: var(--color2);
+  background: #ededed;
   padding: 30px 0 90px;
   text-align: center;
 }
 
 footer .mainfooter {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   bottom: 0;
 }
 
@@ -3165,16 +3174,11 @@ footer .mainfooter img {
   height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 25px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-filter: brightness(10000%);
-          filter: brightness(10000%);
 }
 
 footer .mainfooter p {
   line-height: 1.6;
-  color: var(--whitecolor);
+  color: var(--color2);
 }
 
 .nofixed {
@@ -3209,6 +3213,179 @@ footer .mainfooter p {
 .btn.cancel:hover {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
+}
+
+.btn-dangnhap {
+  background-color: var(--color1);
+  color: var(--whitecolor);
+  border: none;
+}
+
+.content2 {
+  background: transparent;
+}
+
+.formlogin {
+  border-radius: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: calc(var(--spacing) + 2px) 0 calc(var(--spacing) * 1.5);
+}
+
+.formlogin .logo-login {
+  width: 100px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.formlogin h4.title-login {
+  text-align: center;
+  color: var(--color3);
+  text-transform: uppercase;
+  margin: 38px 0 25px;
+}
+
+.formlogin h4.thanhcong {
+  color: var(--colorok);
+}
+
+.formlogin .formmain button.dangnhap {
+  width: 100%;
+  background-color: var(--color1);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.6rem 0;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.formlogin .formmain button.dangnhap:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.formlogin .formmain button.facebook {
+  background-color: #3b5998;
+}
+
+.formlogin .formmain button.google {
+  background-color: #e76150;
+}
+
+.formlogin .formmain button.huy {
+  background-color: var(--color3);
+}
+
+.formlogin .formmain .blockbot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formlogin .formmain .blockbot a {
+  color: var(--color2);
+}
+
+.formlogin .formmain .blockbot a:hover {
+  color: var(--colorlink);
+}
+
+.formlogin .formmain .blockbot a.btn-dangnhap {
+  font-weight: 500;
+  color: var(--colorlink);
+}
+
+.formlogin .formmain .blockbot a.btn-dangnhap:hover {
+  text-decoration: underline;
+}
+
+.formlogin .formmain .input-group {
+  color: var(--color3);
+}
+
+.formlogin .formmain .input-group i.fa {
+  position: absolute;
+  left: 17px;
+  z-index: 5;
+  top: 12px;
+  font-size: 1rem;
+}
+
+.formlogin .formmain .input-group input.form-control {
+  font-size: 14px;
+  padding: .575rem .75rem;
+  padding-left: 30px;
+  border-radius: 5px !important;
+}
+
+.formlogin .formmain .otp input.form-control {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.formlogin .formmain .checkcheck {
+  color: var(--color2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formlogin .formmain .checkcheck .form-check-input {
+  margin-right: 5px;
+  border-radius: .25em !important;
+  margin-top: 0;
+}
+
+.formlogin .formmain .checkcheck a {
+  color: var(--colorlink);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.formlogin .formmain .checkcheck a:hover {
+  text-decoration: underline;
+}
+
+.formlogin .formmain .form-label1 {
+  margin-bottom: 0;
+}
+
+.formlogin .formmain span i {
+  margin-right: 5px;
+  color: var(--colorlink);
+}
+
+.formlogin .formmain span strong {
+  color: var(--color1);
+}
+
+.formlogin .formmain .maotp a {
+  color: var(--colorlink);
+}
+
+.formlogin .formmain .pass .form-control.is-valid, .formlogin .formmain .was-validated .pass .form-control:valid {
+  background-position: right calc(.375em + .1875rem + 1.5rem) center;
+}
+
+.formlogin i.bi {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  z-index: 5;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
